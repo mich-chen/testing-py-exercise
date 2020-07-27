@@ -12,7 +12,7 @@ def is_mel(name, email):
 
     >>> is_mel('Mel Melitpolski', 'totallynotmel@email.com')
     True
-    
+
     >>> is_mel('Not Mel', 'mel@ubermelon.com')
     True
     """
@@ -26,6 +26,16 @@ def most_and_least_common_type(treats):
     Return most and least common treat types in tuple of format
     (most, least). If there's a tie, the dessert that appears
     first in alphabetical order should win.
+
+    >>> most_and_least_common_type([{'type': 'cookie'}, {'type': 'cookie'}, {'type':'brownie'}, {'type': 'brownie'}, {'type': 'drink'}])
+    ('brownie', 'drink')
+    
+    >>> most_and_least_common_type([{'type': 'cookie'}, {'type': 'cookie'}, {'type':'brownie'}, {'type': 'brownie'}, {'type': 'drink'}, {'type': 'cookie'}])
+    ('cookie', 'drink')
+
+    >>> most_and_least_common_type([{'type': 'cookie'}, {'type': 'cookie'}, {'type':'brownie'}, {'type': 'brownie'}, {'type': 'drink'}, {'type': 'cookie'}, {'type': 'appetizer'}])
+    ('cookie', 'appetizer')
+
     """
 
     if not treats:
