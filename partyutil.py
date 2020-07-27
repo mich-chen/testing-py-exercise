@@ -36,6 +36,9 @@ def most_and_least_common_type(treats):
     >>> most_and_least_common_type([{'type': 'cookie'}, {'type': 'cookie'}, {'type':'brownie'}, {'type': 'brownie'}, {'type': 'drink'}, {'type': 'cookie'}, {'type': 'appetizer'}])
     ('cookie', 'appetizer')
 
+    >>> most_and_least_common_type([])
+    (None, None)
+
     """
 
     if not treats:
